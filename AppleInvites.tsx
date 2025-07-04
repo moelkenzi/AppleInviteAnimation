@@ -163,9 +163,12 @@ export default function AppleInvites() {
             <Text style={{ color: "#ff9933", fontWeight: "bold" }}>Elkenzi</Text>
           </Pressable>
         </View>
-        <Text style={{ color: "#ffffff90", fontSize: 14, textAlign: "center" }}>
-          inspired by @CatalinMiron
-        </Text>
+        <Pressable onPress={() => Linking.openURL("https://www.youtube.com/@CatalinMironDev")}>
+          <Text style={{ color: "#ffffff90", fontSize: 14, textAlign: "center" }}>
+            <Text style={{ color: "#ffffff90" }}>inspired by @</Text>
+            <Text style={{ color: "#ff9933", fontWeight: "bold" }}>CatalinMiron</Text>
+          </Text>
+        </Pressable>
       </Stagger>
     </View>
   );
