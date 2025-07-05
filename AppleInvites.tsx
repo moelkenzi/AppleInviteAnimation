@@ -16,6 +16,7 @@ import { Pressable } from "react-native-gesture-handler";
 
 // Images
 const images = [
+  // Gallery Images - from Catelin
   // "https://cdn.dribbble.com/userupload/26986432/file/original-5053a00e51cbc58f3c96105010b52f97.jpg?format=webp&resize=700x525&vertical=center",
   // "https://cdn.dribbble.com/userupload/27918277/file/original-789dad2c7d86b102936d8813358ed669.jpg?resize=752x&vertical=center",
   // "https://cdn.dribbble.com/userupload/36851346/file/original-153c6545cef1ca99fcc8c29c84f97996.jpg?resize=1504x1128&vertical=center",
@@ -23,13 +24,22 @@ const images = [
   // "https://cdn.dribbble.com/userupload/24578264/file/original-186f6df18bfccc4974428bb060b0da3d.jpg?format=webp&resize=700x525&vertical=center",
   // "https://cdn.dribbble.com/userupload/42408881/file/original-9d6e5411740f84dfc8d6055511980f01.jpeg?resize=1200x900&vertical=center",
   // "https://cdn.dribbble.com/userupload/28002315/file/original-940ec0ab385630cb984245faf1a5b910.jpg?resize=1200x900&vertical=center",
-  "https://plus.unsplash.com/premium_photo-1682464708085-95b4486e2c32?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Um9ib3RzfGVufDB8fDB8fHww",
-  "https://images.unsplash.com/photo-1593376893114-1aed528d80cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Um9ib3RzfGVufDB8fDB8fHww",
-  "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Um9ib3RzfGVufDB8fDB8fHww",
-  "https://images.unsplash.com/photo-1625314868143-20e93ce3ff33?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Um9ib3RzfGVufDB8fDB8fHww",
-  "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://images.unsplash.com/photo-1625314887424-9f190599bd56?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
-  "https://plus.unsplash.com/premium_photo-1680700308566-543a60569017?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
+  // Robots
+  // "https://plus.unsplash.com/premium_photo-1682464708085-95b4486e2c32?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Um9ib3RzfGVufDB8fDB8fHww",
+  // "https://images.unsplash.com/photo-1593376893114-1aed528d80cf?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Um9ib3RzfGVufDB8fDB8fHww",
+  // "https://images.unsplash.com/photo-1601132359864-c974e79890ac?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Um9ib3RzfGVufDB8fDB8fHww",
+  // "https://images.unsplash.com/photo-1625314868143-20e93ce3ff33?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Um9ib3RzfGVufDB8fDB8fHww",
+  // "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
+  // "https://images.unsplash.com/photo-1625314887424-9f190599bd56?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
+  // "https://plus.unsplash.com/premium_photo-1680700308566-543a60569017?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzN8fFJvYm90c3xlbnwwfHwwfHx8MA%3D%3D",
+  // Books
+  "https://images.unsplash.com/photo-1627337840960-d55af60bf8e3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODN8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1638324166245-57f9793a1a83?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1748122601171-efbfa460ddc6?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDMwfHx8ZW58MHx8fHx8",
+  "https://images.unsplash.com/photo-1582265386215-6259c402ac46?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1695322790437-d27413ea61da?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://plus.unsplash.com/premium_photo-1750360904813-132e8a8f7cbd?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTN8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
+  "https://images.unsplash.com/photo-1616864814886-60cbfcac88c8?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fEJvb2tzJTIwb24lMjBkYXJrJTIwbW9kZXxlbnwwfHwwfHx8MA%3D%3D",
 ];
 
 const { width } = Dimensions.get("window");
@@ -109,13 +119,13 @@ export default function AppleInvites() {
         duration={500}
         stagger={100}
         style={{ flex: 0.5, justifyContent: "center", alignItems: "center", marginTop: 32 }}>
-        <Text style={{ color: "white", fontWeight: 500, opacity: 0.6 }}>Discover the Future</Text>
+        <Text style={{ color: "white", fontWeight: 500, opacity: 0.6 }}>Welcome to</Text>
         <Text style={{ color: "white", fontSize: 28, fontWeight: "bold", marginBottom: 16 }}>
-          RoboExplorer
+          BookVerse
         </Text>
         <Text style={{ color: "white", opacity: 0.8, textAlign: "center", paddingHorizontal: 20 }}>
-          Explore the fascinating world of <Text style={{ fontWeight: "bold" }}>robotics</Text>{" "}
-          through our curated collection of cutting-edge innovations and breakthroughs.
+          Immerse yourself in a world of <Text style={{ fontWeight: "bold" }}>stories</Text> through
+          our curated collection of captivating books and literary masterpieces.
         </Text>
       </Stagger>
 
@@ -125,14 +135,14 @@ export default function AppleInvites() {
             style={{
               paddingHorizontal: 32,
               paddingVertical: 12,
-              backgroundColor: "white",
+              backgroundColor: "#8B4513",
               borderRadius: 24,
               flexDirection: "row",
               alignItems: "center",
               gap: 8,
             }}>
-            <Text style={{ color: "black", fontSize: 16, fontWeight: "600" }}>Start Exploring</Text>
-            <Text style={{ fontSize: 18 }}>→</Text>
+            <Text style={{ color: "white", fontSize: 16, fontWeight: "600" }}>Start Reading</Text>
+            <Text style={{ fontSize: 18, color: "white" }}>→</Text>
           </Pressable>
 
           <Pressable
@@ -142,7 +152,7 @@ export default function AppleInvites() {
               paddingVertical: 10,
               backgroundColor: "#00000070",
               borderWidth: 1,
-              borderColor: "#ffffff80",
+              borderColor: "#8B451380",
               borderRadius: 24,
               flexDirection: "row",
               alignItems: "center",
@@ -167,13 +177,13 @@ export default function AppleInvites() {
         <View style={{ flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
           <Text style={{ color: "#ffffff90", fontSize: 14, textAlign: "center" }}>Made by </Text>
           <Pressable onPress={() => Linking.openURL("https://elkenzii.vercel.app")}>
-            <Text style={{ color: "#ff9933", fontWeight: "bold" }}>Elkenzi</Text>
+            <Text style={{ color: "#8B4513", fontWeight: "bold" }}>Elkenzi</Text>
           </Pressable>
         </View>
         <Pressable>
           <Text style={{ color: "#ffffff90", fontSize: 14, textAlign: "center" }}>
             <Text style={{ color: "#ffffff90" }}>Join our </Text>
-            <Text style={{ color: "#ff9933", fontWeight: "bold" }}>Robotics Community</Text>
+            <Text style={{ color: "#8B4513", fontWeight: "bold" }}>Reading Community</Text>
           </Text>
         </Pressable>
       </Stagger>
